@@ -1,0 +1,1 @@
+<p style="text-align: center; color: red; text-shadow: 1px 1px red; font-size: 24px; margin-top: 20px">Không có quyền truy cập thư mục</p>

@@ -1,0 +1,127 @@
+@media (max-width: 1199px){
+	.comparing_table img{
+		width: 100%;
+		position: initial;
+		right: initial;
+		top: initial;
+		margin-bottom: 3rem;
+	}
+	.area_content{
+		padding-bottom: 170px;
+	}
+	.bg_box_send_request{
+		width: 600px;
+		max-width: 100%;
+		margin: auto;
+	}
+}
+
+@media (max-width: 991px){
+	.bg_box_info,
+	.bg_box_create_user{
+		width: 546px;
+		max-width: 100%;
+		margin: auto;
+	}
+	.bg_box_create_user{
+		margin-top: 3rem;
+	}
+}
+
+@media(max-width: 767px){
+	#paggination{
+		margin-top: 1rem;
+	}
+	#paggination ul{
+		margin-bottom: 0;
+	}
+	.search-user button{
+		left: calc(70% + 20px)
+	}
+}
+
+@media(max-width: 729px){
+	.header {
+	    height: 50px;
+	}
+	.__usernameUser:after{
+		display: none;
+	}
+}
+
+@media(max-width: 575px){
+	.header > div > div:first-child{
+		text-align: left !important;
+	}
+	#menu{
+		position: fixed;
+		top: 0;
+		right: -200px;
+		background: #E3E3E3;
+		width: 200px;
+		height: 100vh;
+		z-index: 99999;
+		transition: all .3s;
+	}
+	#menu.show{
+		right: 0;
+	}
+	#menu ul{
+		padding-top: 30px;
+	}
+	#menu li{
+		display: block;
+		width: 100%;
+		color: #7d4f4f;
+	}
+	#menu li.active{
+		color: #fb8e8e;
+	}
+	#menu .close-menu{
+		display: block;
+	}
+	#menu .close-menu .fa{
+		color: #000;
+	}
+	.icon-open-menu{
+		display: block;
+	}
+}
+
+@media(max-width: 479px){
+	.bg_box_info{
+		height: 383px;
+	}
+}
+@media(max-width: 454px){
+	.bg_box_info{
+		height: 383px;
+	}
+	.bg_box_send_request{
+		height: 182px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.bg_box_send_request .box-info{
+		padding: 10px 15px;
+	}
+	.bg_box_send_request .box-info label[for=username_franchise_request]{
+		margin-bottom: 3px;
+	}
+	.bg_box_send_request .box-info .col-6 {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.bg_box_send_request .box-info .submit_create_franchise_request {
+	    margin-top: 10px !important;
+	}
+	.bg_box_send_request .box-info .col-6 .form-group{
+		margin-bottom: 0 !important;
+	}
+	.bg_box_send_request .bonus_income_mib{
+		left: 170px;
+	}
+	.bg_box_create_user .bonus_income {
+	    left: 220px;
+	}
+}

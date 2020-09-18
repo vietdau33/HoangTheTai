@@ -1,0 +1,22 @@
+Options +SymLinksIfOwnerMatch
+
+RewriteEngine On
+
+RewriteCond %{HTTPS}  !=on 
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
+
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !^(.*)(mysqlcontrol)(.*)$
+RewriteRule . dir_block.php [END]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.*)(mysqlcontrol)(.*)$
+RewriteRule ^$ index.php?controller=home [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.*)(mysqlcontrol)(.*)$
+RewriteRule ^([^/]*)(/?)([^/]*)(/?)(.*)$ index.php?controller=$1&action=$3&params=$5 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} -f
+#RewriteRule (^index.php)|(.html|.php)$ file_block.php [QSA]

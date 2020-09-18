@@ -1,0 +1,2 @@
+<style>p{text-align:center;margin-top:40px}p span{color:#666;font-size:18px;display:inline-block;padding:18px 22px;background:#eee;border-radius:10px;max-width:calc(100vw - 80px);word-wrap:break-word;box-shadow:0 3px 12px 1px rgba(0,0,0,.3)}</style>
+<p><span>File không thể truy cập</span></p>

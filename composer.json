@@ -1,0 +1,8 @@
+{
+    "require": {
+        "ircmaxell/password-compat": "^1.0",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-curl": "*"
+    }
+}
